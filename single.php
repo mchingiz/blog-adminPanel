@@ -77,7 +77,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		?>
 			<div class="box1">
 			   <h2><a href="single.php"></a></h2>
-			   <span>By <?= $row['author'] ?> - 2 hours ago</span>
+			   <span>By <?= $row['author'] ?> - <?php $date=$row['date']; echo substr($date,0,10)?></span>
 				<div class="top_img">
 				   <img src="<?= $row['image'] ?>" alt="" />
 				</div>   

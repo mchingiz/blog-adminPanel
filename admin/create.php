@@ -51,7 +51,7 @@
 					$pathFromIndex="images/postImages/".date('dmYGis').".".$fileType; // Path to reach the image from index.php
 					
 					
-					$newQuery=$connection->insert("news","title,text,image,author,date","'$title','$text','$pathFromIndex','$author','$date'");
+					$newQuery=$connection->insert("news","title,text,image,author","'$title','$text','$pathFromIndex','$author'");
 
 					move_uploaded_file($fileSource,$targetFile);
 					header("Location:../index.php");
